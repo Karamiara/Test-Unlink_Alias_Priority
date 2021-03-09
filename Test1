@@ -367,10 +367,10 @@ function reAddUnlinkTargets() {
         if (targetNodes[i].classList.contains("unlink-finder-legend")) {
             continue;
         };
-        if (targetNodes[i].classList.contains("exact-word-match-inactive")) {
-            targetNodes[i].classList.remove("exact-word-match-inactive");
-            targetNodes[i].classList.add("exact-word-match");
-            targetNodes[i].style.cssText = `background: ${exactWordMatchStyle}`;
+        if (targetNodes[i].classList.contains("alias-word-match-inactive")) {
+            targetNodes[i].classList.remove("alias-word-match-inactive");
+            targetNodes[i].classList.add("alias-word-match");
+            targetNodes[i].style.cssText = `position: relative; background: ${aliasWordMatchStyle}`;
         };
         if (targetNodes[i].classList.contains("fuzzy-word-match-inactive")) {
             targetNodes[i].classList.remove("fuzzy-word-match-inactive");
@@ -387,10 +387,10 @@ function reAddUnlinkTargets() {
             targetNodes[i].classList.add("redundant-word-match");
             targetNodes[i].style.cssText = `background: ${redundantWordMatchStyle}`;
         };
-        if (targetNodes[i].classList.contains("alias-word-match-inactive")) {
-            targetNodes[i].classList.remove("alias-word-match-inactive");
-            targetNodes[i].classList.add("alias-word-match");
-            targetNodes[i].style.cssText = `position: relative; background: ${aliasWordMatchStyle}`;
+        if (targetNodes[i].classList.contains("exact-word-match-inactive")) {
+            targetNodes[i].classList.remove("exact-word-match-inactive");
+            targetNodes[i].classList.add("exact-word-match");
+            targetNodes[i].style.cssText = `background: ${exactWordMatchStyle}`;
         };
     };
 };
