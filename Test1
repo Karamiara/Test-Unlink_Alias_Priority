@@ -333,9 +333,9 @@ function removeUnlinkTargets() {
         if (targetNodes[i].classList.contains("unlink-finder-legend")) {
             continue;
         };
-        if (targetNodes[i].classList.contains("exact-word-match")) {
-            targetNodes[i].classList.remove("exact-word-match");
-            targetNodes[i].classList.add("exact-word-match-inactive");
+        if (targetNodes[i].classList.contains("alias-word-match")) {
+            targetNodes[i].classList.remove("alias-word-match");
+            targetNodes[i].classList.add("alias-word-match-inactive");
             targetNodes[i].style.cssText = "";
         };
         if (targetNodes[i].classList.contains("fuzzy-word-match")) {
@@ -353,9 +353,9 @@ function removeUnlinkTargets() {
             targetNodes[i].classList.add("redundant-word-match-inactive");
             targetNodes[i].style.cssText = "";
         };
-        if (targetNodes[i].classList.contains("alias-word-match")) {
-            targetNodes[i].classList.remove("alias-word-match");
-            targetNodes[i].classList.add("alias-word-match-inactive");
+        if (targetNodes[i].classList.contains("exact-word-match")) {
+            targetNodes[i].classList.remove("exact-word-match");
+            targetNodes[i].classList.add("exact-word-match-inactive");
             targetNodes[i].style.cssText = "";
         };
     };
